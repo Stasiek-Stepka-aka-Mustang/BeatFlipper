@@ -40,8 +40,18 @@ Instalacja na systemie MacOs (Monterey, Ventura).
 ## Działanie
 
 Poprzez użycie std::system, wywoływane są komendy (do programu yt-dlp) do terminala/basha/cmd (w zależności od systemu), które korzystają z programów/bibliotek w folderze "Biblioteki". 
-Te Biblioteki użytkownik umieszcza sam, w ścieżce Homepath swojego systemu.
 
+
+## Problemy/Fedback
+
+Jeśli masz jakiekolwiek problemy z funkcjonowaniem programu,
+skontaktuj się ze mną przez Instagram (@prod.mustang), bądź przez mój
+profil na Githubie.
+
+## Rozwój Programu
+
+Jeśli jesteś Deweloperem i chcesz przyczynić się do rozwoju programu,
+śmiało, skontaktuj się ze mną przez Instagram (@prod.mustang), bądź przez mój profil na Githubie.
 
 ## Autorzy
 
@@ -54,9 +64,3 @@ Projekt jest projektem typu Open-Source, każdy może przyczynić się do rozwoj
 
 
 
-
-## Problemy/Fedback
-
-Jeśli masz jakiekolwiek problemy z funkcjonowaniem programu,
-skontaktuj się ze mną przez Instagram (@prod.mustang), bądź przez mój
-profil na Githubie.
