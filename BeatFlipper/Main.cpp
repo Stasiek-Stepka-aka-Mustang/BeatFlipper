@@ -34,7 +34,7 @@ int main() {
     #ifdef _WIN32
         std::system("cls");
         OutputColors::setTextColor(6);
-        std::cout << "♫ BeatFlipper by Mustang ♫\n";
+        std::cout << "> BeatFlipper by Mustang <\n";
         OutputColors::setTextColor(7);
     #else
         std::system("clear");
@@ -82,11 +82,11 @@ int main() {
 #else
     Pobieraj::pobierajMacOs();
     /** Kod, który pozwala na pobieranie kilku plików bez zamykania programu do przyszłej implementacji. */
-    /*   std::string input;
+/*   std::string input;
     bool flaga = false;
     do {
         if (!flaga) {
-            pobierajMacOs();
+            Pobieraj::pobierajMacOs();
             flaga = false;
         }
 
@@ -96,18 +96,20 @@ int main() {
 
         if (input == "T") {
             std::system("clear");
+            flaga = false;
         }
         else if (input == "N") {
             std::cout << "\033[33m";
             std::cout << "Zamykam program!\n";
             std::cout << "\033[0m";
+            flaga = true;
             break;
         }
         else  {
             std::cout << "\033[31m";
             std::cout << "Wprowadzwono niepoprawną opcję, upewnij się, że wprowadzasz T lub N!\n";
             std::cout << "\033[0m";
-            flaga = true;
+            flaga = false;
         }
 
     } while (true);*/

@@ -16,7 +16,7 @@ void Pobieraj::pobierajMacOs() {
     std::cout << "Wprowadź, gdzie ma się pobrać Beat (ścieżka):\n▶ ";
     std::getline(std::cin, outputSciezka);
 
-    std::string command = '"' + folderPath.string()+"/yt-dlp" + '"' +
+    std::string command = '"' + folderPath.string()+"/yt-dlp_macos" + '"' +
                           " -f bestaudio -x --audio-format wav --no-playlist --output "
                           + "'" + outputSciezka + "/%(title)s.%(ext)s'" + " 'ytsearch:" + link + "'";
 
@@ -36,12 +36,12 @@ void Pobieraj::pobierajMacOs() {
  * zdefiniowana stricte pod użytkowników Windows (sprawdzane na Windowsie 10 oraz 11).*/
 void Pobieraj::pobierajWindows() {
     std::string link;
-    std::cout << "Wprowadź link do Beat'u:\n";
-    std::cout << "▶ ";
+    std::cout << "Wprowadz link do Beat'u:\n";
+    std::cout << "> ";
     std::getline(std::cin, link);
 
     std::string outputSciezka;
-    std::cout << "Wprowadź, gdzie ma się pobrać Beat (ścieżka):\n▶ ";
+    std::cout << "Wprowadz, gdzie ma się pobrac Beat (sciezka):\n> ";
     std::getline(std::cin, outputSciezka);
 
     std::string command = "\"\"" + folderPath.string()+"\\yt-dlp.exe" + "\"" +
