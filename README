@@ -1,0 +1,15 @@
+[KRÓTKI OPIS]
+BeatFlipper to proste narzędzie typu CLI (Command Line Interface), napisane w języku C++, które pozwala na pobieranie plików z Youtube'a 
+w najlepszej jakości i w szybkim czasie. Program działa przy pomocy popularnej aplikacji yt-dlp oraz przy użyciu bibliotek
+FFMPEG, FFMPROBE oraz FFPLAY, które pozwalają na konwertowanie formatów pobieranych przez yt-dlp (natywnie format .webm). 
+Podsumowując, BeatFlipper to nic innego jak prostsza w obsłudze implementacja yt-dlp, która wymaga od użytkownika tylko 
+dwóch informacji do działania,linku oraz ścieżki wyjścia downloadu. 
+
+[DZIAŁANIE PROGRAMU]
+Poprzez użycie std::system, wywoływane są komendy do terminala/basha/cmd (w zależności od systemu), które korzystają
+z programów/bibliotek w folderze "Biblioteki" (załączony w projekcie). Te Biblioteki użytkownik umieszcza sam, w ścieżce
+Homepath swojego systemu.
+
+[ROZWÓJ PROGRAMU]
+Jeśli jako Developer chcesz przyczynić się do rozwoju programu skontaktuj się ze mną na Githubie, albo
+poprzez mojego Instagrama (@prod.mustang). Jestem otwarty na kolaboracje!
