@@ -10,6 +10,9 @@ Poprzez użycie std::system, wywoływane są komendy do terminala/basha/cmd (w z
 z programów/bibliotek w folderze "Biblioteki" (załączony w projekcie). Te Biblioteki użytkownik umieszcza sam, w ścieżce
 Homepath swojego systemu.
 
+[WAŻNE INFORMACJE]
+W niedługim czasie dodane zostaną foldery z Bibliotekami pod MACOS oraz WINDOWS'a.
+
 [ROZWÓJ PROGRAMU]
 Jeśli jako Developer chcesz przyczynić się do rozwoju programu skontaktuj się ze mną na Githubie, albo
 poprzez mojego Instagrama (@prod.mustang).
