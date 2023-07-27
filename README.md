@@ -9,7 +9,7 @@ FFMPEG, FFMPROBE oraz FFPLAY, które pozwalają na konwertowanie formatów pobie
 
 - Pobieranie Instrumentali z Youtube'a
 - Konwersja na Formaty (MP3/WAV/WEBM)
-- Cross Platform (MacOs, Windows 10, Windows 11, Linux)
+- Cross Platform (MacOs, Windows 10, Windows 11, Linux - Ubuntu, Kali)
 
 
 ## Instalacja
