@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/macbookpro/CLionProjects/BeatFlipper/cmake-build-debug/
+cmake_ninja_workdir = /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target BeatFlipper
 
@@ -49,27 +49,27 @@ cmake_ninja_workdir = /Users/macbookpro/CLionProjects/BeatFlipper/cmake-build-de
 
 build cmake_object_order_depends_target_BeatFlipper: phony || CMakeFiles/BeatFlipper.dir
 
-build CMakeFiles/BeatFlipper.dir/Main.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/Main.cpp || cmake_object_order_depends_target_BeatFlipper
+build CMakeFiles/BeatFlipper.dir/Main.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/Main.cpp || cmake_object_order_depends_target_BeatFlipper
   DEP_FILE = CMakeFiles/BeatFlipper.dir/Main.cpp.o.d
-  FLAGS = -static-libstdc++ -static-libgcc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles/BeatFlipper.dir
   OBJECT_FILE_DIR = CMakeFiles/BeatFlipper.dir
 
-build CMakeFiles/BeatFlipper.dir/Pobieraj.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/Pobieraj.cpp || cmake_object_order_depends_target_BeatFlipper
+build CMakeFiles/BeatFlipper.dir/Pobieraj.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/Pobieraj.cpp || cmake_object_order_depends_target_BeatFlipper
   DEP_FILE = CMakeFiles/BeatFlipper.dir/Pobieraj.cpp.o.d
-  FLAGS = -static-libstdc++ -static-libgcc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles/BeatFlipper.dir
   OBJECT_FILE_DIR = CMakeFiles/BeatFlipper.dir
 
-build CMakeFiles/BeatFlipper.dir/OutputColors.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/OutputColors.cpp || cmake_object_order_depends_target_BeatFlipper
+build CMakeFiles/BeatFlipper.dir/OutputColors.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/OutputColors.cpp || cmake_object_order_depends_target_BeatFlipper
   DEP_FILE = CMakeFiles/BeatFlipper.dir/OutputColors.cpp.o.d
-  FLAGS = -static-libstdc++ -static-libgcc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles/BeatFlipper.dir
   OBJECT_FILE_DIR = CMakeFiles/BeatFlipper.dir
 
-build CMakeFiles/BeatFlipper.dir/ZmienneGlobalne.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/ZmienneGlobalne.cpp || cmake_object_order_depends_target_BeatFlipper
+build CMakeFiles/BeatFlipper.dir/ZmienneGlobalne.cpp.o: CXX_COMPILER__BeatFlipper_Debug /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/ZmienneGlobalne.cpp || cmake_object_order_depends_target_BeatFlipper
   DEP_FILE = CMakeFiles/BeatFlipper.dir/ZmienneGlobalne.cpp.o.d
-  FLAGS = -static-libstdc++ -static-libgcc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fdiagnostics-color=always -std=gnu++23
   OBJECT_DIR = CMakeFiles/BeatFlipper.dir
   OBJECT_FILE_DIR = CMakeFiles/BeatFlipper.dir
 
@@ -82,7 +82,7 @@ build CMakeFiles/BeatFlipper.dir/ZmienneGlobalne.cpp.o: CXX_COMPILER__BeatFlippe
 # Link the executable BeatFlipper
 
 build BeatFlipper: CXX_EXECUTABLE_LINKER__BeatFlipper_Debug CMakeFiles/BeatFlipper.dir/Main.cpp.o CMakeFiles/BeatFlipper.dir/Pobieraj.cpp.o CMakeFiles/BeatFlipper.dir/OutputColors.cpp.o CMakeFiles/BeatFlipper.dir/ZmienneGlobalne.cpp.o
-  FLAGS = -static-libstdc++ -static-libgcc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/BeatFlipper.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -94,7 +94,7 @@ build BeatFlipper: CXX_EXECUTABLE_LINKER__BeatFlipper_Debug CMakeFiles/BeatFlipp
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/macbookpro/CLionProjects/BeatFlipper/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -105,7 +105,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/macbookpro/CLionProjects/BeatFlipper/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/macbookpro/CLionProjects/BeatFlipper -B/Users/macbookpro/CLionProjects/BeatFlipper/cmake-build-debug
+  COMMAND = cd /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper -B/Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -121,7 +121,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/macbookpro/CLionProjects/BeatFlipper/cmake-build-debug
+# Folder: /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/cmake-build-debug
 
 build all: phony BeatFlipper
 
@@ -132,14 +132,14 @@ build all: phony BeatFlipper
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/macbookpro/CLionProjects/BeatFlipper/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/macbookpro/CLionProjects/BeatFlipper/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Users/macbookpro/CLionProjects/BeatFlipper/BeatFlipper/BeatFlipper/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################
