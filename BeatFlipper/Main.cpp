@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <filesystem>
+#include <unistd.h>
 #include "Pobieraj.h"
 #include "OutputColors.h"
 #include "ZmienneGlobalne.h"
@@ -30,90 +31,59 @@ static void okreslSciezke() {
 #endif
 }
 
+static void wyswietlInformacje() {
+#ifdef _WIN32
+    std::system("cls");
+    OutputColors::setTextColor(8);
+    std::cout << "> BeatFlipper 2.0 - by Mustang <\n";
+    OutputColors::setTextColor(7);
+#else
+    std::system("clear");
+        std::cout << "\033[90m";
+        std::cout << "> BeatFlipper 2.0 - by Mustang <\n";
+        std::cout << "\033[0m";
+#endif
+}
+
 int main() {
-    #ifdef _WIN32
-        std::system("cls");
-        OutputColors::setTextColor(6);
-        std::cout << "> BeatFlipper by Mustang <\n";
-        OutputColors::setTextColor(7);
-    #else
-        std::system("clear");
-        OutputColors::setTextColor("\033[33m");
-        std::cout << "♫ BeatFlipper by Mustang ♫\n";
-        OutputColors::setTextColor("\033[0m");
-    #endif
-
-
-
     okreslSciezke();
 
-#ifdef _WIN32
-    Pobieraj::pobierajWindows();
-    /** Kod, który pozwala na pobieranie kilku plików bez zamykania programu do przyszłej implementacji. */
-    /*  std::string input;
-    bool flaga = false;
-    do {
-        if (!flaga) {
-            pobierajWin();
-            flaga = false;
-        }
+    std::string wyborProgramu;
+    #ifdef _WIN32
+        wyswietlInformacje();
+        do {
+            std::cout << "Wybierz co chcesz pobierac (wprowadz cyferke):\n";
+            std::cout << "1. Audio.\n";
+            std::cout << "2. Video.\n";
 
-        std::cout << "Czy chcesz dalej pobrać jeszcze coś (wpisz T albo N)?\n";
-        std::cout << "> ";
-        std::getline(std::cin,input);
+            OutputColors::setTextColor(8);
+            cout << "> ";
+            OutputColors::setTextColor(7);
 
-        if (input == "T") {
-            std::system("cls");
-        }
-        else if (input == "N") {
-            std::cout << "\033[33m";
-            std::cout << "Zamykam program!\n";
-            std::cout << "\033[0m";
-            break;
-        }
-        else  {
-            std::cout << "\033[31m";
-            std::cout << "Wprowadzwono niepoprawną opcję, upewnij się, że wprowadzasz T lub N!\n";
-            std::cout << "\033[0m";
-            flaga = true;
-        }
+            std::getline(cin,wyborProgramu);
 
-    } while (true);*/
-#else
-    Pobieraj::pobierajMacOs();
-    /** Kod, który pozwala na pobieranie kilku plików bez zamykania programu do przyszłej implementacji. */
-/*   std::string input;
-    bool flaga = false;
-    do {
-        if (!flaga) {
-            Pobieraj::pobierajMacOs();
-            flaga = false;
-        }
+            if (wyborProgramu == "1") {
+                Pobieraj::pobierajAudioWindows();
+                break;
+            }
+            else if (wyborProgramu == "2") {
+                Pobieraj::pobierajVideoWindows();
+                break;
+            }
+            else {
+                std::system("cls");
+                OutputColors::setTextColor(4);
+                std::cout << "Wprowadzono niepoprawna cyferke!\n";
+                OutputColors::setTextColor(7);
+                sleep(1);
+                wyswietlInformacje();
+            }
 
-        std::cout << "Czy chcesz dalej pobrać jeszcze coś (wpisz T albo N)?\n";
-        std::cout << "> ";
-        std::getline(std::cin,input);
+        } while (true);
 
-        if (input == "T") {
-            std::system("clear");
-            flaga = false;
-        }
-        else if (input == "N") {
-            std::cout << "\033[33m";
-            std::cout << "Zamykam program!\n";
-            std::cout << "\033[0m";
-            flaga = true;
-            break;
-        }
-        else  {
-            std::cout << "\033[31m";
-            std::cout << "Wprowadzwono niepoprawną opcję, upewnij się, że wprowadzasz T lub N!\n";
-            std::cout << "\033[0m";
-            flaga = false;
-        }
-
-    } while (true);*/
-#endif
+    #else
+        Pobieraj::pobierajMacOs();
+    #endif
 
     return 0;
 }

@@ -4,7 +4,6 @@
 
 class OutputColors {
 public:
-    static void setTextColor(const char* colorCode);
     static void setTextColor(int colorCode);
 };
 

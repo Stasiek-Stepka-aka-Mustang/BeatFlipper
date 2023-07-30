@@ -8,15 +8,6 @@
 void OutputColors::setTextColor(int colorCode) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, colorCode);
-}
-#else
-void OutputColors::setTextColor(const char* colorCode) {
-    std::cout << colorCode;
-}
-
-void OutputColors::setTextColor(int colorCode) {
-
-}
-
 #endif
+}
 

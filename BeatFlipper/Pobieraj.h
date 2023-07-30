@@ -5,8 +5,11 @@ using namespace std;
 
 class Pobieraj {
 public:
-    static void pobierajMacOs();
-    static void pobierajWindows();
+    static void pobierajAudioMacOs();
+    static void pobierajVideoMacOs();
+
+    static void pobierajAudioWindows();
+    static void pobierajVideoWindows();
 };
 
 #endif
