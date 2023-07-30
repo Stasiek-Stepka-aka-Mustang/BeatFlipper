@@ -23,9 +23,7 @@ static void okreslSciezke() {
      * folder już istenieje (do późniejszego użytkowania programu).*/
     const char* homePath = std::getenv("HOME");
     if (homePath == nullptr) {
-        OutputColors::setTextColor("\033[31m");
         std::cout << "Wystąpił błąd, przy wyszukiwaniu ścieżki Home, napisz do mnie @prod.mustang!\n";
-        OutputColors::setTextColor("\033[0m");
     }
     folderPath = std::filesystem::path(homePath) / "Biblioteki";
 #endif
@@ -82,7 +80,36 @@ int main() {
         } while (true);
 
     #else
-        Pobieraj::pobierajMacOs();
+    wyswietlInformacje();
+    do {
+        std::cout << "Wybierz co chcesz pobierac (wprowadz cyferke):\n";
+        std::cout << "1. Audio.\n";
+        std::cout << "2. Video.\n";
+
+        std::cout << "\033[90m";
+        cout << "> ";
+        std::cout << "\033[0m";
+
+        std::getline(cin,wyborProgramu);
+
+        if (wyborProgramu == "1") {
+            Pobieraj::pobierajAudioMacOs();
+            break;
+        }
+        else if (wyborProgramu == "2") {
+            Pobieraj::pobierajVideoMacOs();
+            break;
+        }
+        else {
+            std::system("clear");
+            std::cout << "\033[31m";
+            std::cout << "Wprowadzono niepoprawna cyferke!\n";
+            std::cout << "\033[0m";
+            sleep(1);
+            wyswietlInformacje();
+        }
+
+    } while (true);
     #endif
 
     return 0;

@@ -10,6 +10,7 @@ public:
 
     static void pobierajAudioWindows();
     static void pobierajVideoWindows();
+
 };
 
 #endif
