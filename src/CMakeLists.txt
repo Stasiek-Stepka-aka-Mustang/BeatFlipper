@@ -10,7 +10,6 @@ add_executable(BeatFlipper Main.cpp Download.cpp Download.h OutputColors.cpp Out
         Download.cpp)
 
 
-
 #[[
 set(CMAKE_EXE_LINKER_FLAGS "-static")
 ]]
