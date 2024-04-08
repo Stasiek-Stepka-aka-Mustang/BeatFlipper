@@ -19,7 +19,7 @@ static void getHomePath() {
     const char *homePath = std::getenv("HOME");
     if (homePath == nullptr) {
         std::cout << "\033[31m";
-        std::cout << "Wystapil blad, przy wyszukiwaniu sciezki Home, napisz do mnie @prod.mustang!\n";
+        std::cout << "Wystąpił błąd, przy wyszukiwaniu ścieżki Homepath, napisz do mnie @prod.mustang!\n";
         std::cout << "\033[0m";
     }
     folderPath = std::filesystem::path(homePath) / "Biblioteki";
@@ -77,7 +77,7 @@ int main() {
 #else
     displayWelcomeUI();
     do {
-        std::cout << "Wybierz co chcesz pobierac:\n";
+        std::cout << "Wybierz co chcesz pobierać:\n";
         std::cout << "1. Audio.\n";
         std::cout << "2. Video.\n";
 
@@ -96,7 +96,7 @@ int main() {
         } else {
             std::system("clear");
             std::cout << "\033[31m";
-            std::cout << "Wprowadzono niepoprawna cyferke!\n";
+            std::cout << "Wprowadzono niepoprawna cyferkę!\n";
             std::cout << "\033[0m";
             sleep(1);
             displayWelcomeUI();

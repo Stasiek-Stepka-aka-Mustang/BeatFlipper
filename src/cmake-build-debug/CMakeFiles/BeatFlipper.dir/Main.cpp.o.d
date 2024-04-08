@@ -560,6 +560,6 @@ CMakeFiles/BeatFlipper.dir/Main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/gethostuuid.h \
-  /Users/stanislawstepka/CLionProjects/BeatFlipper/src/Pobieraj.h \
+  /Users/stanislawstepka/CLionProjects/BeatFlipper/src/Download.h \
   /Users/stanislawstepka/CLionProjects/BeatFlipper/src/OutputColors.h \
-  /Users/stanislawstepka/CLionProjects/BeatFlipper/src/ZmienneGlobalne.h
+  /Users/stanislawstepka/CLionProjects/BeatFlipper/src/GlobalVariables.h

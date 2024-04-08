@@ -12,7 +12,7 @@ void Download::downloadAudioMacOs() {
     std::string outputPath;
 
     std::system("clear");
-    std::cout << "Wprowadz link do Beat'u:\n";
+    std::cout << "Wprowadź link do Beat'u:\n";
 
     std::cout << "\033[90m";
     std::cout << "> ";
@@ -20,7 +20,7 @@ void Download::downloadAudioMacOs() {
     std::getline(std::cin, link);
 
     std::cout << "\n";
-    std::cout << "Wprowadz, gdzie ma się pobrac Beat (sciezka):\n";
+    std::cout << "Wprowadź, gdzie ma się pobrać Beat (ścieżka):\n";
 
     std::cout << "\033[90m";
     std::cout << "> ";
@@ -44,7 +44,7 @@ void Download::downloadAudioMacOs() {
 
     std::cout << "\n";
     std::cout << "\033[92m";
-    std::cout << "Pobrano plik!\nOkno zakmnie sie automatycznie za 3 sekundy :)";
+    std::cout << "Pobrano plik!\nOkno zamknie się automatycznie za 3 sekundy :)";
     std::cout << "\033[0m";
     sleep(3);
 }
@@ -56,7 +56,7 @@ void Download::downloadVideoMacOs() {
     std::string outputPath;
 
     std::system("clear");
-    std::cout << "Wprowadz link do Filmiku:\n";
+    std::cout << "Wprowadź link do Filmiku:\n";
 
     std::cout << "\033[90m";
     std::cout << "> ";
@@ -64,7 +64,7 @@ void Download::downloadVideoMacOs() {
     std::getline(std::cin, link);
 
     std::cout << "\n";
-    std::cout << "Wprowadz, gdzie ma się pobrac filmik (sciezka):\n";
+    std::cout << "Wprowadź, gdzie ma się pobrać filmik (ścieżka):\n";
 
     std::cout << "\033[90m";
     std::cout << "> ";
@@ -86,7 +86,7 @@ void Download::downloadVideoMacOs() {
 
     std::cout << "\n";
     std::cout << "\033[92m";
-    std::cout << "Pobrano plik!\nOkno zakmnie sie automatycznie za 3 sekundy :)";
+    std::cout << "Pobrano plik!\nOkno zamknie się automatycznie za 3 sekundy :)";
     std::cout << "\033[0m";
     sleep(15);
 }
@@ -127,49 +127,13 @@ void Download::downloadAudioWindows() {
     OutputColors::setTextColor(10);
     std::cout << "Pobrano plik!\nOkno zakmnie sie automatycznie za 3 sekundy :)";
     OutputColors::setTextColor(7);
-    zaczekaj();
-}
-
-void Download::downloadVideoWindows() {
-    std::string link;
-    std::string outputPath;
-
-    std::system("cls");
-    std::cout << "Wprowadz link do Filmiku:\n";
-
-    OutputColors::setTextColor(8);
-    std::cout << "> ";
-    OutputColors::setTextColor(7);
-    std::getline(std::cin, link);
-
-    std::cout << "\n";
-    std::cout << "Wprowadz, gdzie ma się pobrac Filmik (sciezka):\n";
-
-    OutputColors::setTextColor(8);
-    std::cout << "> ";
-    OutputColors::setTextColor(7);
-    std::getline(std::cin, outputPath);
-
-    std::string command = "\"\"" + folderPath.string() + "\\yt-dlp.exe" + "\"" +
-                          " -S ext:mp4:m4a --no-playlist --output "
-                          + "\"" + outputPath + "\\%(title)s.%(ext)s\" " + "\"" + link + "\" > NUL\"";
-
-    std::cout << "\n";
-    std::cout << "Pobieram plik...\n";
-    std::cout << "Przy dluzszych filmikach moze potrwac to chwilke dluzej!\n";
-
-    std::system(command.c_str());
-
-    std::cout << "\n";
-    OutputColors::setTextColor(10);
-    std::cout << "Pobrano plik!\nOkno zakmnie sie automatycznie za 3 sekundy :)";
-    OutputColors::setTextColor(7);
     sleep(3);
+}
 #endif
 }
 
 /* Metoda pobiera wyznaczony przez użytkownika Filmik, natywnie wybiera format mp4,
- *  z Audio w codecu m4a/wav, w zależności od dostępnego formatu, metoda strice pod Windows'a. */
+ *  z Audio w kodeku m4a/wav, w zależności od dostępnego formatu, metoda stricte pod Windowsa. */
 void Download::downloadVideoWindows() {
 #ifdef _WIN32
     std::string link;
@@ -184,7 +148,7 @@ void Download::downloadVideoWindows() {
     std::getline(std::cin, link);
 
     std::cout << "\n";
-    std::cout << "Wprowadz, gdzie ma się pobrac Filmik (sciezka):\n";
+    std::cout << "Wprowadz, gdzie ma sie pobrac filmik (sciezka):\n";
 
     OutputColors::setTextColor(8);
     std::cout << "> ";
@@ -203,7 +167,7 @@ void Download::downloadVideoWindows() {
 
     cout << "\n";
     OutputColors::setTextColor(10);
-    std::cout << "Pobrano plik!\nOkno zakmnie sie automatycznie za 3 sekundy :)";
+    std::cout << "Pobrano plik!\nOkno zamknie sie automatycznie za 3 sekundy :)";
     OutputColors::setTextColor(7);
     sleep(3);
 #endif
