@@ -1,0 +1,10 @@
+# CMake generated files
+cmake-build-debug/
+cmake-build-release/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.cmake
+# Exclude all CMakeLists.txt.user files
+CMakeLists.txt.user
