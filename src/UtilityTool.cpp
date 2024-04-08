@@ -8,7 +8,7 @@
 #include "../include/UtilityTool.h"
 #include "../include/GlobalVariables.h"
 
-void UtilityTool::getHomePath() {
+void UtilityTool::resolveHomepath() {
 #ifdef _WIN32
     const char *homePath = std::getenv("USERPROFILE");
     if (homePath == nullptr) {

@@ -6,7 +6,7 @@
 #include "../include/GlobalVariables.h"
 
 /* Metoda pobiera wyznaczony przez użytkownika Bit, metoda jak sama nazwa wskazuje
- * zdefiniowana stricte pod użytkowników MacOs (sprawdzane na MacOs Ventura i Monterey).*/
+ * zdefiniowana stricte pod użytkowników MacOs (sprawdzane na MacOs Ventura i Monterey). */
 void Download::downloadAudioMacOs() {
     std::string link;
     std::string outputPath;
@@ -34,8 +34,8 @@ void Download::downloadAudioMacOs() {
 
     std::cout << command << '\n';
 
-    /** Usunięcie outputu z YT-DLP. */
-    /* command += " > /dev/null";*/
+    // Usunięcie outputu z YT-DLP.
+    // command += " > /dev/null";
 
     std::cout << "\n";
     std::cout << "Pobieram plik...\n";
@@ -75,7 +75,7 @@ void Download::downloadVideoMacOs() {
                           " -S ext:mp4:m4a --no-playlist --output "
                           + "'" + outputPath + "/%(title)s.%(ext)s'" + " \"" + link + "\"";
 
-    /** Usunięcie outputu z YT-DLP. */
+    // Usunięcie outputu z YT-DLP.
     command += " > /dev/null";
 
     std::cout << "\n";
@@ -92,7 +92,7 @@ void Download::downloadVideoMacOs() {
 }
 
 /* Metoda pobiera wyznaczony przez użytkownika Bit, metoda jak sama nazwa wskazuje
- * zdefiniowana stricte pod użytkowników Windows (sprawdzane na Windowsie 10 oraz 11).*/
+ * zdefiniowana stricte pod użytkowników Windows (sprawdzane na Windowsie 10 oraz 11). */
 void Download::downloadAudioWindows() {
 #ifdef _WIN32
     std::string link;
@@ -134,7 +134,7 @@ void Download::downloadAudioWindows() {
 }
 
 /* Metoda pobiera wyznaczony przez użytkownika Filmik, natywnie wybiera format mp4,
- *  z Audio w kodeku m4a/wav, w zależności od dostępnego formatu, metoda stricte pod Windowsa. */
+ * z Audio w kodeku m4a/wav, w zależności od dostępnego formatu, metoda stricte pod Windows. */
 void Download::downloadVideoWindows() {
 #ifdef _WIN32
     std::string link;

@@ -8,7 +8,7 @@
 
 class UtilityTool {
 public:
-    static void getHomePath();
+    static void resolveHomepath();
 
     static void displayWelcomeUI();
 };

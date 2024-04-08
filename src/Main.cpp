@@ -6,7 +6,7 @@
 #include "../include/UtilityTool.h"
 
 int main() {
-    UtilityTool::getHomePath();
+    UtilityTool::resolveHomepath();
 #ifdef _WIN32
     UtilityTool::displayWelcomeUI();
     std::string userInput;
