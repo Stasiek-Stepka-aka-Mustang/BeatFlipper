@@ -1,3 +1,3 @@
-#include "GlobalVariables.h"
+#include "../include/GlobalVariables.h"
 
 std::filesystem::path folderPath;

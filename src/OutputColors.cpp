@@ -1,5 +1,5 @@
 #include <iostream>
-#include "OutputColors.h"
+#include "../include/OutputColors.h"
 
 #ifdef _WIN32
 #include <Windows.h>

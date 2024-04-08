@@ -1,9 +1,9 @@
 #include <string>
 #include <iostream>
 #include <unistd.h>
-#include "Download.h"
-#include "OutputColors.h"
-#include "GlobalVariables.h"
+#include "../include/Download.h"
+#include "../include/OutputColors.h"
+#include "../include/GlobalVariables.h"
 
 /* Metoda pobiera wyznaczony przez użytkownika Bit, metoda jak sama nazwa wskazuje
  * zdefiniowana stricte pod użytkowników MacOs (sprawdzane na MacOs Ventura i Monterey).*/
@@ -129,6 +129,7 @@ void Download::downloadAudioWindows() {
     OutputColors::setTextColor(7);
     sleep(3);
 }
+
 #endif
 }
 
@@ -155,7 +156,7 @@ void Download::downloadVideoWindows() {
     OutputColors::setTextColor(7);
     std::getline(std::cin, outputPath);
 
-    std::string command = "\"\"" + folderPath.string()+"\\yt-dlp.exe" + "\"" +
+    std::string command = "\"\"" + folderPath.string() + "\\yt-dlp.exe" + "\"" +
                           " -S ext:mp4:m4a --no-playlist --output "
                           + "\"" + outputPath + "\\%(title)s.%(ext)s\" " + "\"" + link + "\" > NUL\"";
 

@@ -6,8 +6,10 @@ set(CMAKE_CXX_STANDARD 23)
 #[[ TU JEST SECRET SAUCE, ŻEBY DZIAŁAŁO! ]]
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -ld_classic")
 
-add_executable(BeatFlipper Main.cpp Download.cpp Download.h OutputColors.cpp OutputColors.h GlobalVariables.cpp GlobalVariables.h
-        Download.cpp)
+add_executable(BeatFlipper Main.cpp Download.cpp ../include/Download.h OutputColors.cpp ../include/OutputColors.h GlobalVariables.cpp ../include/GlobalVariables.h
+        Download.cpp
+        UtilityTool.cpp
+        ../include/UtilityTool.h)
 
 
 #set(CMAKE_EXE_LINKER_FLAGS "-static")
