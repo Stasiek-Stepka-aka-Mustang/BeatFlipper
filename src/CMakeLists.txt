@@ -10,8 +10,5 @@ add_executable(BeatFlipper Main.cpp Download.cpp Download.h OutputColors.cpp Out
         Download.cpp)
 
 
-#[[
-set(CMAKE_EXE_LINKER_FLAGS "-static")
-]]
-#[[
-set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE INTERNAL "" FORCE)]]
+#set(CMAKE_EXE_LINKER_FLAGS "-static")
+#set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE INTERNAL "" FORCE)
